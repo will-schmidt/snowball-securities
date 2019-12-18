@@ -1,0 +1,54 @@
+$primary: #006fbb;
+
+
+.contact-page {
+    font-weight: 300;
+    background: white;
+
+    h3 {
+        font-weight: 300;
+        
+    }
+
+    .customer-service-section {
+        min-height: 500px;
+
+        font-size: 18px;
+        color: #444;
+    }
+
+    .social-media-section {
+        // height: 20vh;
+        height: 128px;
+        background-color: $primary;
+
+        @media (max-width: 550px) {
+            padding: 20px 0;
+        }
+    }
+    
+
+    .contact-us-form {
+        // min-height: 60vh;
+        padding-top: 12.5vh;
+    }
+
+    .form-control {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $primary;
+        padding: 0 5px;
+        &::placeholder {
+            color: #C4CDD5;
+            font-weight: 300;
+        }
+    }
+
+
+
+    .lead {
+        color: $primary;
+        font-weight: 500;
+    }
+
+}

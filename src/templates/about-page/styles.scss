@@ -1,0 +1,114 @@
+.about-page {
+  .lowercase {
+    text-transform: none;
+  }
+
+  .big-text {
+    line-height: 0.8;
+  }
+
+
+
+
+  background: white;
+
+  .tab-tab {
+    @media (max-width: 528px) {
+      height: 75px;
+    }
+  }
+
+  .tab-img {
+    height: 100px;
+    width: 100px;
+    @media (max-width: 528px) {
+      height: 50px;
+    }
+  }
+
+  .timeline-icon {
+    width: 2px;
+    height: 2rem;
+    background-color: #aaaaaa;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+  
+    &:before {
+      width: 0px;
+      height: 0px;
+      border: 5px solid #aaaaaa;
+      border-radius: 50%;
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+    }
+  
+    &:after {
+      width: 0px;
+      height: 0px;
+      border: 5px solid #aaaaaa;
+      border-radius: 50%;
+      content: '';
+      position: absolute;
+      top: calc(100% - 5px);
+      left: -4px;
+    }
+  
+    @media (min-width: 992px) {
+      width: 3rem;
+      height: 2px;
+  
+      &:before {
+        left: -5px;
+      }
+  
+      &:after {
+        left: calc(100% - 4px);
+        top: -4px;
+      }
+    }
+  }
+
+  .trade-section {
+    height: 40vh;
+  }
+
+  .img-left, .img-right {
+    background-position: center;
+    background-size: cover;  
+  }
+
+  .img-left {
+    background-image: url("../../img/about-1.jpg");      
+  }
+
+  .img-right {
+    background-image: url("../../img/about-2.jpg");    
+  }
+
+  .tab-description {
+    ul {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .fadeOut{
+    opacity:0;
+    // transition: opacity 0.25s;
+
+  }
+  .fadeIn{
+      opacity:1;
+      transition: opacity 0.3s 0.3s;
+
+  }
+
+  h5 {
+    color: #5f5f5f;
+  }
+
+}

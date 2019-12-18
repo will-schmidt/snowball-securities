@@ -1,0 +1,37 @@
+.history-card {
+  height: 200px;
+  border: none !important;
+  width: 220px;
+
+  
+
+  .card-title {
+    font-size: 16px;
+    color: #006fbb;
+  }
+  
+  .card-description {
+    font-size: 12px;
+  }
+
+  @media (min-width: 992px) {
+    min-height: 200px;
+    max-width: 80%;
+  }
+
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+  .timeline-icon {
+    display: none;
+  }
+}
+
+
+
+
